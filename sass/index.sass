@@ -1,0 +1,113 @@
+@import "var.sass"
+
+html
+  font-size: 20px
+
+h1
+  padding: 20px 0
+  color: #B2ADA9
+  font-size: 2rem
+  font-weight: bold
+  text-align: center
+h2
+  font-size: 2rem
+  line-height: 1.5
+  color: #FFE100
+  font-weight: bold
+h3
+  font-size: 1.4rem
+  line-height: 1.5
+  color: #FFE100
+
+
+section.introduce
+  padding: 100px 0
+  .part
+    font-size: 0
+    .info
+      width: 33.333333%
+      display: inline-block
+      vertical-align: middle
+      p
+        font-size: 0.8rem
+        line-height: 2
+        color: #B2ADA9
+        i.fas.fa-star
+          color: #FFE100
+    figure.pic
+      width: 66.666666%
+      display: inline-block
+      vertical-align: middle
+    &:nth-child(odd)
+      .info
+        padding-left: 10%
+        box-sizing: border-box
+    &:nth-child(even)
+      .info
+        position: relative
+        left: 66.666666%
+      figure.pic
+        position: relative
+        left: -33.333333%
+  +rwd(768px)
+    padding: 30px 0
+    .part
+      .info
+        width: 100%
+        display: block
+        text-align: center
+        p
+          width: 45%
+          margin: auto
+          text-align: left
+          // font-size: 0.8rem
+          i.fas.fa-star
+      figure.pic
+        width: 100%
+        display: block
+      &:nth-child(odd)
+        .info
+          padding-left: 0%
+      &:nth-child(even)
+        .info
+          position: relative
+          left: 0%
+        figure.pic
+          position: relative
+          left: 0%
+
+section.certification
+  .box
+    font-size: 0
+    figure.pic
+      width: 33.333333%
+      display: inline-block
+      
+section.prodcut
+  .box
+    max-width: 1320px
+    padding: 50px 0
+    margin: auto
+    display: flex
+    figure.pic
+      flex: 1
+      padding: 0 15px
+    .info
+      flex: 1
+      padding: 0 15px
+      position: relative
+      p.txt
+        color: #B2ADA9
+        font-size: 2rem
+        line-height: 1.5
+      .btn
+        width: calc(100% - 30px)
+        font-size: 1.6rem
+        line-height: 3rem
+        border-radius: 1.5rem
+        color: #fff
+        background-color: #FFE100
+        text-align: center
+        position: absolute
+        bottom: 0
+        cursor: pointer
