@@ -123,8 +123,14 @@ html(lang="zh-tw")
 			section.prodcut
 				h1 訂購 Ponitor
 				.box
-					figure.pic
-						img(src="./images/p1.jpg")
+					.product-pic
+						#product-carousel.owl-carousel
+							figure
+								img(src="./images/p1.jpg")
+							figure
+								img(src="./images/p2.jpg")
+							figure
+								img(src="./images/p3.jpg")
 					.info
 						p.txt 最強消毒錠-走潔淨清潔消毒一次搞定
 						p.price.strikethrough NT$350
@@ -205,6 +211,10 @@ html(lang="zh-tw")
 
 
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+		script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js")
 		script(src="./js/libs/owl.carousel.min.js")
+		script(src="./js/index.js")
+		
 		
 		

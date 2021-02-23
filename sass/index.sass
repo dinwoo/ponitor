@@ -23,6 +23,27 @@ h3
   line-height: 1.5
   color: $yellow
 
+.owl-dots
+  padding: 10px 0
+  text-align: center
+  position: absolute
+  bottom: -30px
+  left: 50%
+  transform: translateX(-50%)
+  .owl-dot
+    width: 10px
+    height: 10px
+    background-color: #fff !important
+    border: 1px solid $yellow !important
+    border-radius: 5px
+    margin: 0 5px
+    &.active
+      background-color: $yellow !important
+    &:focus
+      outline: none
+  +rwd(768px)
+    .owl-dot
+
 header
   position: absolute
   top: 0
@@ -138,19 +159,19 @@ section.introduce
       &:nth-child(2)
         .info
           p
-            width: 61%
+            width: 62%
       &:nth-child(3)
         .info
           p
-            width: 83%
+            width: 84%
       &:nth-child(4)
         .info
           p
-            width: 61%
+            width: 62%
       &:nth-child(5),&:nth-child(6)
         .info
           p
-            width: 67%
+            width: 68%
       &:nth-child(odd)
         .info
           padding-left: 0%
@@ -173,14 +194,16 @@ section.prodcut
   .box
     max-width: 1320px
     padding: 50px 0
-    margin: auto
+    margin: 0 auto 30px
     display: flex
-    figure.pic
-      flex: 1
+    .product-pic
+      width: 50%
       padding: 0 15px
+      box-sizing: border-box
     .info
-      flex: 1
+      width: 50%
       padding: 0 15px
+      box-sizing: border-box
       position: relative
       p.txt
         padding-bottom: 15px
@@ -205,6 +228,7 @@ section.prodcut
             margin: 0 10px
             font-size: 1.6rem
             color: $yellow
+            cursor: pointer
             +dib
           input
             width: 30%
@@ -223,8 +247,11 @@ section.prodcut
     .box
       padding: 10px 0
       display: block
-      figure.pic
+      .product-pic
+        width: 100%
+        margin-bottom: 30px
       .info
+        width: 100%
         p.txt
         p.price
         .func-box
