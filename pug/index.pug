@@ -7,20 +7,13 @@ html(lang="zh-tw")
 		link(rel="stylesheet", href="./css/css_reset.css")
 		link(rel="stylesheet", href="./css/owl.carousel.min.css")
 		link(rel="stylesheet", href="./css/owl.theme.default.min.css")
+		link(rel="stylesheet", href="./css/common.css")
 		link(rel="stylesheet", href="./css/index.css")
 		//- link(rel='icon', type='image/x-icon', href='./images/favicon.ico')
 		link(rel="icon" href="/images/ponitor-logo-02.png" type="image/icon type")
 		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
 	body
-		header
-			a.logo-link(href="https://ponitor.com.tw/Ponitor/Index")
-				figure.logo
-					img(src="./images/ponitor-logo-13.png")
-			.func-box
-				a.func-link(href="")
-					i.fas.fa-shopping-cart.micon
-				a.func-link(href="")
-					i.fas.fa-user-circle.micon
+		include ../component/Header.pug
 		article
 			section.banner
 				figure.pic
@@ -141,71 +134,7 @@ html(lang="zh-tw")
 								input(type="text" value="1")
 								i.fas.fa-plus-circle
 							.btn 立即購買
-		footer
-			.wrapper
-				.box
-					.title 產品優勢
-					p.txt
-						i.fas.fa-star
-						| 產品榮獲「SNQ國家品質標章認證」
-					p.txt
-						i.fas.fa-star
-						| 產品基礎材料二氧化氯為國際衛生組織WHO推薦的新一代綠色消毒劑
-					p.txt
-						i.fas.fa-star
-						| 產品數秒鐘內即有殺菌效果
-					p.txt
-						i.fas.fa-star
-						| 產品氧化殺菌力是漂白水的7倍，而且安全
-					p.txt
-						i.fas.fa-star
-						| 產品用來噴灑、擦拭、浸泡，不同方式都能有效殺菌
-					p.txt
-						i.fas.fa-star
-						| 產品無毒、不刺激皮膚，不產生癌物
-					p.txt
-						i.fas.fa-star
-						| 安全高效、不殘留，滅菌率99.999%。對動、植物等多細胞生物完全無害
-					p.txt
-						i.fas.fa-star
-						| 產品亦可用於餐飲用具和蔬果的滅菌消毒
-					p.txt
-						i.fas.fa-star
-						| 產品PH值7，無毒、不刺激皮膚，不產生癌物
-					p.txt
-						i.fas.fa-star
-						| 產品能有效去除空氣中尼古丁、甲醛等有害物質
-				.box
-					.title 注意事項
-					p.txt
-						i.fas.fa-star
-						| 本產品所建議用量為較低濃度，請遵照建議用量，安心使用!
-					p.txt
-						i.fas.fa-star
-						| 本產品嚴禁內服，應放置兒童拿不到的地方。若不慎誤食，請立即送醫就診
-					p.txt
-						i.fas.fa-star
-						| 本產品避免陽光直接照射，並防潮保存，勿與易燃、易爆及酸、鹼物質存放在一起。
-					p.txt
-						i.fas.fa-star
-						| 單片包裝開封之後需盡快泡製完畢，以免效果降低
-					p.txt
-						i.fas.fa-star
-						| 本產品不宜與其他消毒劑同時使用
-				.box
-					.title 聯絡我們
-					p.txt
-						i.fas.fa-thumbs-up
-						| 若有任何問題或大量訂購合作可以來信與我們聯絡
-					p.txt
-						i.fas.fa-envelope-square
-						| 客戶服務信箱：Service@ponitor.com.tw
-			.copyright
-				| © 2021 Ponitor Copyright：
-				a(href="https://ponitor.com.tw/Ponitor/Index") 走潔淨 Ponitor
-
-
-
+		include ../component/Footer.pug
 
 
 

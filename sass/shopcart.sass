@@ -1,0 +1,125 @@
+@import "var.sass"
+
+body
+  background-color: #F8F8FA
+
+section.banner
+  padding: 30px 0
+  +rwd(768px)
+    padding: 10px 0
+section.shop-cart
+  .wrapper
+    max-width: 1320px
+    padding: 0 15px
+    margin: auto
+    box-sizing: border-box
+    +clearfix
+    .left-content
+      width: 65%
+      padding-right: 30px
+      box-sizing: border-box
+      float: left
+      +rwd(768px)
+        width: 100%
+        padding-right: 0
+        float: none
+    .right-content
+      width: 35%
+      float: left
+      +rwd(768px)
+        width: 100%
+        float: none
+    .content
+      margin-bottom: 20px
+      border: 1px solid #eee
+      box-shadow: 1px 1px 5px #eee
+      background-color: #fff
+      .title
+        padding: 10px
+        background-color: #F6F6F6
+        border-bottom: 1px solid #eee
+        font-size: 1rem
+      .box
+        padding: 10px
+        .row
+          font-size: .8rem
+          color: #666
+          padding: 5px 0
+          .sub-title
+            padding: 5px 0
+          input[type="text"]
+            min-width: 300px
+            border: 1px solid #ccc
+          select
+            width: 100%
+            border: 1px solid #ccc
+            option
+          input[type="radio"]
+            +dib
+          .radio-txt
+            +dib
+        .oreder-info
+          font-size: .8rem
+          color: #666
+          padding: 5px 0
+          +clearfix
+          &.order-total
+            margin-top: 20px
+            padding: 20px 0
+            border-top: 1px solid #ccc
+          .order-title
+            float: left
+          .order-num
+            float: right
+        .btn
+          width: 100%
+          font-size: 0.8rem
+          line-height: 2
+          text-align: center
+          background-color: $yellow
+          color: #fff
+          border-radius: 5px
+
+        
+      .list-head
+        padding: 10px
+        border-bottom: 1px solid #eee
+        font-size: 0
+      .product-list
+        padding: 10px
+        font-size: 0
+      .column
+        width: 30%
+        font-size: .8rem
+        text-align: center
+        +dib
+        &.product-info
+          text-align: left
+          figure.pic
+            width: 80px
+            +dib
+          .product-name
+            padding-left: 10px
+            +dib
+        &.discount
+          width: 10%
+        &.price
+          width: 10%
+        &.num
+          i.fas.fa-minus-circle,i.fas.fa-plus-circle
+            cursor: pointer
+          input
+            width: 100px
+            margin: 0 5px
+            text-align: center
+        &.subtotal
+          width: 10%
+        &.cross
+          width: 10%
+          i.fas.fa-times
+            cursor: pointer
+
+
+
+
+

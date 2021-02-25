@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+html(lang="zh-tw")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title 走潔淨 Ponitor
+		link(rel="stylesheet", href="./css/css_reset.css")
+		link(rel="stylesheet", href="./css/owl.carousel.min.css")
+		link(rel="stylesheet", href="./css/owl.theme.default.min.css")
+		link(rel="stylesheet", href="./css/common.css")
+		link(rel="stylesheet", href="./css/shopcart.css")
+		//- link(rel='icon', type='image/x-icon', href='./images/favicon.ico')
+		link(rel="icon" href="/images/ponitor-logo-02.png" type="image/icon type")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+	body
+		include ../component/Header.pug
+		article
+			section.banner
+				h1 購物車
+			section.shop-cart
+				.wrapper
+					.content
+						.title 購物車
+						.list-head
+							.column.product-info 商品資料
+							.column.discount 優惠
+							.column.price 單價
+							.column.num 數量
+							.column.subtotal 小計
+						.product-list
+							.column.product-info
+								figure.pic
+									img(src="./images/p1.jpg")
+								.product-name 走潔淨
+							.column.discount NT$350
+							.column.price NT$350
+							.column.num
+								i.fas.fa-minus-circle
+								input(type="text" value="1")
+								i.fas.fa-plus-circle
+							.column.subtotal NT$350
+							.column.cross
+								i.fas.fa-times
+					
+					.left-content
+						.content
+							.title 訂購人資料
+							.box
+								.row
+									.sub-title 姓名
+									input(type="text")
+								.row
+									.sub-title 電話
+									input(type="text")
+								.row
+									.sub-title email
+									input(type="text")
+						.content
+							.title 收件人資料
+							.box
+								.row
+									input(type="radio")
+									.radio-txt 同訂購人資料
+								.row
+									.sub-title 姓名
+									input(type="text")
+								.row
+									.sub-title 電話
+									input(type="text")
+								.row
+									.sub-title email
+									input(type="text")
+					.right-content
+						.content
+							.title 選擇送貨及付款方式
+							.box
+								.row
+									.sub-title 送貨地點
+									select(name="")
+										option(value="0") 0
+								.row
+									.sub-title 送貨方式
+									select(name="")
+										option(value="0") 0
+								.row
+									.sub-title 付款方式
+									select(name="")
+										option(value="0") 0
+						.content
+							.title 訂單資訊
+							.box
+								.oreder-info
+									.order-title 小計：
+									.order-num NT$350
+								.oreder-info
+									.order-title 運費：
+									.order-num NT$60
+								.oreder-info.order-total
+									.order-title 合計：
+									.order-num NT$410
+								.btn 前往結帳
+									
+
+
+		include ../component/Footer.pug
+
+
+
+
+
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+		script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js")
+		script(src="./js/libs/owl.carousel.min.js")
+		script(src="./js/index.js")
+		
+		
+		
