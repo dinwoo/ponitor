@@ -51,8 +51,8 @@
 
     var itemScene2 = new ScrollMagic.Scene({
       triggerElement: "section.introduce .part:nth-of-type(1)",
-      offset: 50, //指標位移
-      triggerHook: .5,
+      offset: 0, //指標位移
+      triggerHook: .6,
       reverse: false, //動畫重複 default:true
     })
       .setTween(itemTween2)
@@ -66,8 +66,8 @@
 
     var itemScene3 = new ScrollMagic.Scene({
       triggerElement: "section.introduce .part:nth-of-type(2)",
-      offset: 50, //指標位移
-      triggerHook: .5,
+      offset: 0, //指標位移
+      triggerHook: .6,
       reverse: false, //動畫重複 default:true
     })
       .setTween(itemTween3)
@@ -81,8 +81,8 @@
 
     var itemScene4 = new ScrollMagic.Scene({
       triggerElement: "section.introduce .part:nth-of-type(3)",
-      offset: 50, //指標位移
-      triggerHook: .5,
+      offset: 0, //指標位移
+      triggerHook: .6,
       reverse: false, //動畫重複 default:true
     })
       .setTween(itemTween4)
@@ -96,8 +96,8 @@
 
     var itemScene5 = new ScrollMagic.Scene({
       triggerElement: "section.introduce .part:nth-of-type(4)",
-      offset: 50, //指標位移
-      triggerHook: .5,
+      offset: 0, //指標位移
+      triggerHook: .6,
       reverse: false, //動畫重複 default:true
     })
       .setTween(itemTween5)
@@ -111,8 +111,8 @@
 
     var itemScene6 = new ScrollMagic.Scene({
       triggerElement: "section.introduce .part:nth-of-type(5)",
-      offset: 50, //指標位移
-      triggerHook: .5,
+      offset: 0, //指標位移
+      triggerHook: .6,
       reverse: false, //動畫重複 default:true
     })
       .setTween(itemTween6)
