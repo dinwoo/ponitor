@@ -50,6 +50,7 @@ section.shop-cart
           input[type="text"]
             min-width: 300px
             border: 1px solid #ccc
+            box-sizing: border-box
           select
             width: 100%
             border: 1px solid #ccc
@@ -79,6 +80,7 @@ section.shop-cart
           background-color: $yellow
           color: #fff
           border-radius: 5px
+          cursor: pointer
 
         
       .list-head
@@ -89,11 +91,11 @@ section.shop-cart
         padding: 10px
         font-size: 0
       .column
-        width: 30%
         font-size: .8rem
         text-align: center
         +dib
         &.product-info
+          width: 40%
           text-align: left
           figure.pic
             width: 80px
@@ -101,23 +103,80 @@ section.shop-cart
           .product-name
             padding-left: 10px
             +dib
-        &.discount
-          width: 10%
         &.price
           width: 10%
         &.num
+          width: 30%
           i.fas.fa-minus-circle,i.fas.fa-plus-circle
             cursor: pointer
+            +dib
           input
             width: 100px
             margin: 0 5px
             text-align: center
+            +dib
         &.subtotal
           width: 10%
         &.cross
           width: 10%
           i.fas.fa-times
             cursor: pointer
+  +rwd(768px)
+    .wrapper
+      .left-content
+        width: 100%
+        padding-right: 0
+        float: none
+      .right-content
+        width: 100%
+        float: none
+      .content
+        margin-bottom: 10px
+        .title
+        .box
+          .row
+            .sub-title
+            input[type="text"]
+              min-width: auto
+              width: 100%
+            select
+              option
+            input[type="radio"]
+            .radio-txt
+          .oreder-info
+            &.order-total
+            .order-title
+            .order-num
+          .btn
+          
+        .list-head
+          display: none
+        .product-list
+          position: relative
+        .column
+          &.product-info
+            width: 80%
+            figure.pic
+              width: 30%
+            .product-name
+          &.price
+            width: 20%
+            vertical-align: bottom
+          &.num
+            width: 80%
+            margin-top: 10px
+            text-align: left
+            i.fas.fa-minus-circle,i.fas.fa-plus-circle
+              font-size: 1.5rem
+            input
+          &.subtotal
+            width: 20%
+            margin-top: 10px
+          &.cross
+            position: absolute
+            top: 10px
+            right: 10px
+            i.fas.fa-times
 
 
 

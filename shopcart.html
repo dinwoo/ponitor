@@ -27,7 +27,6 @@
             <div class="title">購物車</div>
             <div class="list-head">
               <div class="column product-info">商品資料</div>
-              <div class="column discount">優惠</div>
               <div class="column price">單價</div>
               <div class="column num">數量</div>
               <div class="column subtotal">小計</div>
@@ -37,12 +36,23 @@
                 <figure class="pic"><img src="./images/p1.jpg"/></figure>
                 <div class="product-name">走潔淨</div>
               </div>
-              <div class="column discount">NT$350</div>
-              <div class="column price">NT$350</div>
-              <div class="column num"><i class="fas fa-minus-circle"></i>
-                <input type="text" value="1"/><i class="fas fa-plus-circle"></i>
+              <div class="column price">NT$<span class="price-num">350</span></div>
+              <div class="column num"><i class="fas fa-minus-circle minus"></i>
+                <input class="product-num" type="text" value="1"/><i class="fas fa-plus-circle plus"></i>
               </div>
-              <div class="column subtotal">NT$350</div>
+              <div class="column subtotal">NT$<span class="subtotal-num">350</span></div>
+              <div class="column cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="product-list">
+              <div class="column product-info">
+                <figure class="pic"><img src="./images/p1.jpg"/></figure>
+                <div class="product-name">走潔淨</div>
+              </div>
+              <div class="column price">NT$<span class="price-num">500</span></div>
+              <div class="column num"><i class="fas fa-minus-circle minus"></i>
+                <input class="product-num" type="text" value="1"/><i class="fas fa-plus-circle plus"></i>
+              </div>
+              <div class="column subtotal">NT$<span class="subtotal-num">500</span></div>
               <div class="column cross"><i class="fas fa-times"></i></div>
             </div>
           </div>
@@ -167,6 +177,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="./js/libs/owl.carousel.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/shopcart.js"></script>
   </body>
 </html>

@@ -130,9 +130,9 @@ html(lang="zh-tw")
 						p.price NT$350
 						.func-box
 							.num-box
-								i.fas.fa-minus-circle
-								input(type="text" value="1")
-								i.fas.fa-plus-circle
+								i.fas.fa-minus-circle.minus
+								input.product-num(type="text" value="1")
+								i.fas.fa-plus-circle.plus
 							.btn 立即購買
 		include ../component/Footer.pug
 
@@ -140,9 +140,13 @@ html(lang="zh-tw")
 
 
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
-		script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js")
-		script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js")
 		script(src="./js/libs/owl.carousel.min.js")
+		script(src="./js/libs/TweenMax.js")
+		script(src="./js/libs/ScrollMagic.js")
+		script(src="./js/libs/highlight.pack.js")
+		script(src="./js/libs/animation.gsap.js")
+		script(src="./js/libs/debug.addIndicators.js")  
+		script(src="./js/common.js")
 		script(src="./js/index.js")
 		
 		
