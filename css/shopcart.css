@@ -49,7 +49,8 @@ section.shop-cart .wrapper {
     border: 1px solid #eee;
     -webkit-box-shadow: 1px 1px 5px #eee;
     box-shadow: 1px 1px 5px #eee;
-    background-color: #fff; }
+    background-color: #fff;
+    clear: both; }
     section.shop-cart .wrapper .content .title {
       padding: 10px;
       background-color: #F6F6F6;
@@ -102,6 +103,11 @@ section.shop-cart .wrapper {
         color: #fff;
         border-radius: 5px;
         cursor: pointer; }
+    section.shop-cart .wrapper .content .shopcart-description {
+      padding: 10px;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: #666; }
     section.shop-cart .wrapper .content .list-head {
       padding: 10px;
       border-bottom: 1px solid #eee;
