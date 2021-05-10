@@ -150,18 +150,44 @@
 
 
   $(document).ready(function() {
+    var productLength = $('#product-carousel figure').length
+    $('#dot-carousel').append($('#product-carousel').html())
     productOwl = $('#product-carousel').owlCarousel({
       loop: true,
       margin: 0,
+      items: 1,
+      nav: false,
+      center: false,
+      dots: false,
+      mouseDrag: false,
+      touchDrag: false
+    })
+
+    dotOwl = $('#dot-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
       responsiveClass: true,
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      items: 1,
+      items: productLength,
       nav: false,
-      center: false,
-      dots: true,
+      center: true,
+      dots: false,
+      onInitialized: function (e) {
+        productOwl.trigger("to.owl.carousel", [0]);
+      },
     })
+
+    for(let i = 0;i< productLength;i++){
+      $(".dot-box .product"+(i+1)).on("click", function () {
+        dotOwl.trigger("to.owl.carousel", [i]);
+      });
+    }
+    
+    dotOwl.on("changed.owl.carousel", function (e) {
+      productOwl.trigger("to.owl.carousel", [e.item.index % productLength]);
+    });
     
     $('.buy-btn').on('click', function() {
       $('html,body').animate({ scrollTop: $('section.prodcut').offset().top-$('section.prodcut').height()/4 }, 500);

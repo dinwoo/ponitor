@@ -121,6 +121,13 @@ section.prodcut .box {
     padding: 0 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
+    section.prodcut .box .product-pic .dot-box {
+      width: 95%;
+      margin: 10px auto; }
+      section.prodcut .box .product-pic .dot-box #dot-carousel figure {
+        opacity: .5; }
+      section.prodcut .box .product-pic .dot-box #dot-carousel .center figure {
+        opacity: 1; }
   section.prodcut .box .info {
     width: 50%;
     padding: 0 15px;
