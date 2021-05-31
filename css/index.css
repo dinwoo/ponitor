@@ -221,7 +221,8 @@ section.carousel {
           -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
           white-space: normal;
-          overflow: hidden; }
+          overflow: hidden;
+          text-align: left; }
         section.carousel .wrapper .carousel-box .carousel-item a.link {
           display: block;
           width: 80px;
