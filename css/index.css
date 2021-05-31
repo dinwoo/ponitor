@@ -214,7 +214,12 @@ section.carousel {
           margin-bottom: 0.2rem; }
         section.carousel .wrapper .carousel-box .carousel-item .content {
           font-size: 0.8rem;
-          line-height: 1.5; }
+          line-height: 1.5;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          white-space: normal;
+          overflow: hidden; }
         section.carousel .wrapper .carousel-box .carousel-item a.link {
           display: block;
           width: 80px;
