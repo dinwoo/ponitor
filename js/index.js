@@ -193,6 +193,45 @@
       $('html,body').animate({ scrollTop: $('section.prodcut').offset().top-$('section.prodcut').height()/4 }, 500);
     })
 
+    var isShowProductInfo = false;
+    $('section.product-info .btn').on('click',function () {
+      if(isShowProductInfo){
+        $('section.product-info .info .content').removeClass('open')
+        $(this).text('展開資訊')
+        isShowProductInfo = false
+      }else{
+        $('section.product-info .info .content').addClass('open')
+        $(this).text('收合資訊')
+        isShowProductInfo = true
+      }
+    })
+
+    let carouselArr=[];
+    for (let i = 0; i <$('.carousel-box').length; i++) {
+      carouselArr[i] = $('.carousel-box').eq(i).owlCarousel({
+        loop: true,
+        margin: 20,
+        items: 1,
+        nav: false,
+        center: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive:{
+          769:{
+            items: 3
+          }
+        }
+      })
+      $('section.carousel').eq(i).find('.arrow-left').on('click',function () {
+        carouselArr[i].trigger('prev.owl.carousel');
+      })
+      $('section.carousel').eq(i).find('.arrow-right').on('click',function () {
+        carouselArr[i].trigger('next.owl.carousel');
+      })
+    }
+
     setAnimate();
     doAnimate();
 
