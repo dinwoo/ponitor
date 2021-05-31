@@ -161,7 +161,8 @@ section.carousel {
   section.carousel .wrapper {
     width: 90%;
     margin: auto;
-    font-size: 0; }
+    font-size: 0;
+    text-align: center; }
     section.carousel .wrapper .arrow-left {
       width: 4%;
       margin-right: 1%;
