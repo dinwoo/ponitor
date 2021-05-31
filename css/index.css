@@ -213,6 +213,7 @@ section.carousel {
           text-align: center;
           margin-bottom: 0.2rem; }
         section.carousel .wrapper .carousel-box .carousel-item .content {
+          min-height: 4.8rem;
           font-size: 0.8rem;
           line-height: 1.5;
           display: -webkit-box;

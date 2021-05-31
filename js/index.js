@@ -193,6 +193,11 @@
       $('html,body').animate({ scrollTop: $('section.prodcut').offset().top-$('section.prodcut').height()/4 }, 500);
     })
 
+    console.log()
+    if(($('.product-info .content .box').height()<300&&$(window).width()>768)||($('.product-info .content .box').height()<200&&$(window).width()<=768)){
+      $('section.product-info .info .content').addClass('open')
+      $('section.product-info .btn').hide()
+    }
     var isShowProductInfo = false;
     $('section.product-info .btn').on('click',function () {
       if(isShowProductInfo){
